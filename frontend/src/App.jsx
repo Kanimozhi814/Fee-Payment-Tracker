@@ -196,6 +196,17 @@ return (
         >
           {loadingStudents ? "Searching..." : "Search"}
         </button>
+        
+        <button
+  onClick={() => {
+    setSearch("");
+    searchStudents();
+  }}
+  disabled={loadingStudents}
+  className="rounded-lg border border-slate-300 px-6 py-3 font-semibold text-slate-700 hover:bg-slate-100 disabled:opacity-50"
+>
+  Clear
+</button>
       </div>
 
       {students.length > 0 && (
