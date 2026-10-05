@@ -317,6 +317,7 @@ return (
               <input
                 type="date"
                 value={paymentDate}
+                max={new Date().toISOString().split("T")[0]}
                 onChange={(e) => setPaymentDate(e.target.value)}
                 className="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-blue-500"
               />
