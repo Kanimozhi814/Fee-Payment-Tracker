@@ -247,6 +247,19 @@ return (
           <p className="mt-1 text-slate-500">
             {feeDetails.student.email} • {feeDetails.student.phone}
           </p>
+          <button
+  onClick={() => {
+    setSelectedStudent(null);
+    setFeeDetails(null);
+    setAmount("");
+    setNote("");
+    setSuccess("");
+    setError("");
+  }}
+  className="mt-4 rounded-lg border border-slate-300 px-4 py-2 font-medium text-slate-700 hover:bg-slate-100"
+>
+  Clear Student
+</button>
         </div>
 
         <div className="mt-6 grid gap-4 md:grid-cols-3">
